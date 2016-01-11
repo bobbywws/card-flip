@@ -3,9 +3,9 @@
 
 	You may find these CSS3 properties useful:;
 		transition
-		-webkit-transform
-		-webkit-transform-style
-		-webkit-backface-visibility
+		transform
+		transform-style
+		backface-visibility
 */
 
 .front {
@@ -13,17 +13,17 @@
 }
 
 .back {
-	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .front, .back {
-	-webkit-transition: all 1s;
+	transition: all 1s;
 	backface-visibility: hidden;
 }
 
 .portfolio-item:hover .back {
-	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
 }
 .portfolio-item:hover .front {
-	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
